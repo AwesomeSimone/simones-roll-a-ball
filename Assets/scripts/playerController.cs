@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-
 public class playerController : MonoBehaviour
 {
 
@@ -68,7 +67,7 @@ public class playerController : MonoBehaviour
             {
                 resetPosition = other.transform.position;
 
-                GameObject temporaryTextObject = (GameObject)Instantiate(checkpointCanvas);
+                GameObject temporaryTextObject = (GameObject)Instantiate(pointCanvas);
                 Destroy(temporaryTextObject, 1.5f);
             }
         }
